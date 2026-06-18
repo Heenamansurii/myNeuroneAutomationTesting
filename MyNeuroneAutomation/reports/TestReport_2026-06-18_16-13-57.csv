@@ -1,0 +1,14 @@
+TC ID,Description,Status,Time,Error
+"LOGIN_TC_017_ValidCredentials","Sahi email + password — login hona chahiye (BUG_017 pending)","PASS","16:14:03",""
+"LOGIN_TC_026_AfterEmailVerification","Verified account se login — 'verify email' error nahi aana chahiye (BUG_026)","PASS","16:14:08",""
+"LOGIN_TC_036_ForgotPasswordLink","Forgot Password link — Reset page khulna chahiye, 404 nahi (BUG_035 fixed)","PASS","16:14:14",""
+"LOGIN_TC_038_ForgotPassword_UnregisteredEmail","Unregistered email — generic message aana chahiye, registration status reveal nahi (BUG_037 fixed)","PASS","16:14:20",""
+"LOGIN_TC_034_TermsAndPrivacyLinks","Terms & Conditions + Privacy Policy links — sahi page khulna chahiye (Already passing)","PASS","16:14:28",""
+
+SUMMARY,,,,
+Total,25,,, 
+Pass,21,,,
+Fail,4,,,
+Run Date,2026-06-18 16:13:57,,,
+Environment,Staging,,,
+URL,https://staging.myneuronworld.com,,,

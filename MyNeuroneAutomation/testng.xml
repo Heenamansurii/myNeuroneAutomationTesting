@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MyNeuron Test Suite" verbose="1">
+
+  <listeners>
+    <!-- HTML Report — browser mein khulta hai -->
+    <listener class-name="utils.ExtentReportListener"/>
+    <!-- CSV Report — Excel mein open hoga, manager ko bhejo -->
+    <listener class-name="utils.ReportGenerator"/>
+  </listeners>
+
+  <test name="Registration Tests">
+    <classes>
+      <class name="testcase.register.REG_TC_ALL"/>
+    </classes>
+  </test>
+
+  <test name="Login Tests">
+    <classes>
+      <class name="testcase.login.LOGIN_TC_ALL"/>
+    </classes>
+  </test>
+
+</suite>
