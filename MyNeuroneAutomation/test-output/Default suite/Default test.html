@@ -1,0 +1,441 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 18 12:46:45 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>206 seconds (206530 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_PASS_007_PasswordWithSpace, heena, , mansuri, GENERATE, Abc 123@, Abc 123@, PASS, YES, Password me space — allowed hai (passphrase standard, BUG_043 Not a bug)</td>
+<td><div><pre>java.lang.AssertionError: [TC_PASS_007_PasswordWithSpace] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace753692748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace753692748'><pre>java.lang.AssertionError: [TC_PASS_007_PasswordWithSpace] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>9</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_PASS_006_ValidPassword_AllTypes, heena, , mansuri, GENERATE, ....A1@a, ....A1@a, PASS, YES, Valid password (upper+lower+number+special) — accept hona chahiye (BUG_047 fixed)</td>
+<td><div><pre>java.lang.AssertionError: [TC_PASS_006_ValidPassword_AllTypes] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1470400901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470400901'><pre>java.lang.AssertionError: [TC_PASS_006_ValidPassword_AllTypes] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_PASS_005_ValidPassword_8chars, heena, , mansuri, GENERATE, Heee@123, Heee@123, PASS, YES, Valid 8 char password — accept hona chahiye (BUG_032 fixed)</td>
+<td><div><pre>java.lang.AssertionError: [TC_PASS_005_ValidPassword_8chars] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace380216561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace380216561'><pre>java.lang.AssertionError: [TC_PASS_005_ValidPassword_8chars] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>13</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_EMAIL_004_ValidRegistration, heena, , mansuri, GENERATE, Password@123, Password@123, PASS, YES, Completely valid data — registration PASS hona chahiye (BUG_009)</td>
+<td><div><pre>java.lang.AssertionError: [TC_EMAIL_004_ValidRegistration] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1261545224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261545224'><pre>java.lang.AssertionError: [TC_EMAIL_004_ValidRegistration] Registration honi chahiye thi lekin nahi hui
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_EMAIL_002_SpecialCharsOnly, Test, , User, _-+@gmail.com, Password@123, Password@123, FAIL, YES, Email username sirf special chars — reject hona chahiye (BUG_048 fixed)</td>
+<td></td>
+<td>8</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_PASS_004_NumericPassword, heena, , mansuri, GENERATE, 111111111111111111111, 111111111111111111111, FAIL, YES, Sirf numbers wala weak password — reject hona chahiye</td>
+<td></td>
+<td>10</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_NAME_005_LongName_100chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, , User, GENERATE, Password@123, Password@123, FAIL, YES, 100 char name — restrict hona chahiye (BUG_020)</td>
+<td></td>
+<td>9</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_PASS_003_ShortPassword_3char, Test, , User, GENERATE, A1@, A1@, FAIL, YES, 3 char password — sirf relevant error message aana chahiye</td>
+<td></td>
+<td>11</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_NAME_007_NumericName_DotPassword, 1, 2, 3, GENERATE, Pass.word@123, Pass.word@123, FAIL, YES, Numeric names + dot password — validation error aana chahiye (BUG_011)</td>
+<td></td>
+<td>11</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_NAME_006_LastNameEmpty, heena, , , GENERATE, Password@123, Password@123, FAIL, YES, Last name khali — mandatory field error aana chahiye (BUG_044 fixed)</td>
+<td></td>
+<td>13</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_PASS_002_ShortPassword_1char, Test, , User, GENERATE, a, a, FAIL, YES, Bahut chhota password — min 8 chars ka error aana chahiye</td>
+<td></td>
+<td>9</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_EMAIL_003_EmailWithSpace, heena, , mansuri, 1@gmail.com , Password@123, Password@123, FAIL, YES, Email me trailing space — reject hona chahiye (BUG_046)</td>
+<td></td>
+<td>9</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_NAME_001_NumericNames, 1, 2, 3, GENERATE, Password@123, Password@123, FAIL, YES, Name fields me numbers — reject hona chahiye (BUG_010/040 fixed)</td>
+<td></td>
+<td>11</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_PASS_001_PasswordMismatch, Test, , User, GENERATE, Test@123, Test@456, FAIL, YES, Password aur Confirm Password alag hain — error aana chahiye</td>
+<td></td>
+<td>10</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_EMAIL_005_DuplicateEmail, heena, , mansuri, testuser_duplicate@mailinator.com, Password@123, Password@123, FAIL, YES, Already registered email — clear error message aana chahiye (BUG_063)</td>
+<td></td>
+<td>8</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_NAME_002_LastNameSpecialCharsOnly, heena, , .., GENERATE, Password@123, Password@123, FAIL, YES, Last name sirf dots — reject hona chahiye (BUG_041 fixed)</td>
+<td></td>
+<td>8</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_EMAIL_001_InvalidFormat, Test, , User, #@12, Password@123, Password@123, FAIL, YES, Invalid email #@12 — reject hona chahiye (BUG_008)</td>
+<td></td>
+<td>9</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_NAME_004_LongName_1407chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, , User, GENERATE, Password@123, Password@123, FAIL, YES, 1407 char name — restrict ya error hona chahiye (BUG_013)</td>
+<td></td>
+<td>11</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_NAME_003_NameUnderscoresOnly, ________________, , mansuri, GENERATE, Password@123, Password@123, FAIL, YES, First name sirf underscores — reject hona chahiye (BUG_049 fixed)</td>
+<td></td>
+<td>9</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+<tr>
+<td title='testcase.register.REG_TC_ALL.verifyRegistration()'><b>verifyRegistration</b><br>Test class: testcase.register.REG_TC_ALL<br>Parameters: TC_UI_001_NoTermsCheckbox, heena, , mansuri, GENERATE, Password@123, Password@123, FAIL, NO, Terms checkbox nahi click kiya — submit nahi hona chahiye (BUG_045)</td>
+<td></td>
+<td>10</td>
+<td>testcase.register.REG_TC_ALL@411f53a0</td></tr>
+</table><p>
+</body>
+</html>

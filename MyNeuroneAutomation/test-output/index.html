@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MyNeuron_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">MyNeuron Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MyNeuron_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\leado\git\myNeuroneAutomationTesting\MyNeuroneAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MyNeuron_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MyNeuron_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MyNeuron_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MyNeuron_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MyNeuron_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MyNeuron_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 4 failed,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyNeuron_Test_Suite" class="hide-methods failed suite-MyNeuron_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-MyNeuron_Test_Suite -->
+                      <a href="#" panel-name="suite-MyNeuron_Test_Suite" class="show-methods failed suite-MyNeuron_Test_Suite"> (show)</a> <!-- show-methods failed suite-MyNeuron_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-MyNeuron_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_PASS_005_ValidPassword_8chars, heena, , mansuri, GENERATE, Heee@123, Heee@123, PASS, YES, Valid 8...)">verifyRegistration(TC_PASS_005_ValidPassword_8chars, heena, , mansuri, GENERATE, Heee@123, Heee@123, PASS, YES, Valid 8...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_PASS_006_ValidPassword_AllTypes, heena, , mansuri, GENERATE, ....A1@a, ....A1@a, PASS, YES, Valid...)">verifyRegistration(TC_PASS_006_ValidPassword_AllTypes, heena, , mansuri, GENERATE, ....A1@a, ....A1@a, PASS, YES, Valid...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_EMAIL_004_ValidRegistration, heena, , mansuri, GENERATE, Password@123, Password@123, PASS, YES, C...)">verifyRegistration(TC_EMAIL_004_ValidRegistration, heena, , mansuri, GENERATE, Password@123, Password@123, PASS, YES, C...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_PASS_007_PasswordWithSpace, heena, , mansuri, GENERATE, Abc 123@, Abc 123@, PASS, YES, Password m...)">verifyRegistration(TC_PASS_007_PasswordWithSpace, heena, , mansuri, GENERATE, Abc 123@, Abc 123@, PASS, YES, Password m...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyNeuron_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyNeuron_Test_Suite" class="hide-methods passed suite-MyNeuron_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-MyNeuron_Test_Suite -->
+                      <a href="#" panel-name="suite-MyNeuron_Test_Suite" class="show-methods passed suite-MyNeuron_Test_Suite"> (show)</a> <!-- show-methods passed suite-MyNeuron_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-MyNeuron_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.login.LOGIN_TC_ALL" class="method navigator-link" hash-for-method="verifyLogin(LOGIN_TC_036_ForgotPasswordLink, , , PASS, Forgot Password link — Reset page khulna chahiye, 404 nah...)">verifyLogin(LOGIN_TC_036_ForgotPasswordLink, , , PASS, Forgot Password link — Reset page khulna chahiye, 404 nah...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.login.LOGIN_TC_ALL" class="method navigator-link" hash-for-method="verifyLogin(LOGIN_TC_026_AfterEmailVerification, testuser@example.com, Password@123, PASS, Verified account se l...)">verifyLogin(LOGIN_TC_026_AfterEmailVerification, testuser@example.com, Password@123, PASS, Verified account se l...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.login.LOGIN_TC_ALL" class="method navigator-link" hash-for-method="verifyLogin(LOGIN_TC_017_ValidCredentials, testuser@example.com, Password@123, PASS, Sahi email + password — log...)">verifyLogin(LOGIN_TC_017_ValidCredentials, testuser@example.com, Password@123, PASS, Sahi email + password — log...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.login.LOGIN_TC_ALL" class="method navigator-link" hash-for-method="verifyLogin(LOGIN_TC_034_TermsAndPrivacyLinks, , , PASS, Terms &amp; Conditions + Privacy Policy links — sahi page k...)">verifyLogin(LOGIN_TC_034_TermsAndPrivacyLinks, , , PASS, Terms & Conditions + Privacy Policy links — sahi page k...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.login.LOGIN_TC_ALL" class="method navigator-link" hash-for-method="verifyLogin(LOGIN_TC_038_ForgotPassword_UnregisteredEmail, test123@abc.com, , PASS, Unregistered email — generic...)">verifyLogin(LOGIN_TC_038_ForgotPassword_UnregisteredEmail, test123@abc.com, , PASS, Unregistered email — generic...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_NAME_007_NumericName_DotPassword, 1, 2, 3, GENERATE, Pass.word@123, Pass.word@123, FAIL, YES, Num...)">verifyRegistration(TC_NAME_007_NumericName_DotPassword, 1, 2, 3, GENERATE, Pass.word@123, Pass.word@123, FAIL, YES, Num...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_EMAIL_005_DuplicateEmail, heena, , mansuri, testuser_duplicate@mailinator.com, Password@123, Pass...)">verifyRegistration(TC_EMAIL_005_DuplicateEmail, heena, , mansuri, testuser_duplicate@mailinator.com, Password@123, Pass...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_PASS_001_PasswordMismatch, Test, , User, GENERATE, Test@123, Test@456, FAIL, YES, Password aur Co...)">verifyRegistration(TC_PASS_001_PasswordMismatch, Test, , User, GENERATE, Test@123, Test@456, FAIL, YES, Password aur Co...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_EMAIL_001_InvalidFormat, Test, , User, #@12, Password@123, Password@123, FAIL, YES, Invalid email...)">verifyRegistration(TC_EMAIL_001_InvalidFormat, Test, , User, #@12, Password@123, Password@123, FAIL, YES, Invalid email...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_EMAIL_003_EmailWithSpace, heena, , mansuri, 1@gmail.com , Password@123, Password@123, FAIL, YES, ...)">verifyRegistration(TC_EMAIL_003_EmailWithSpace, heena, , mansuri, 1@gmail.com , Password@123, Password@123, FAIL, YES, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_NAME_006_LastNameEmpty, heena, , , GENERATE, Password@123, Password@123, FAIL, YES, Last name kha...)">verifyRegistration(TC_NAME_006_LastNameEmpty, heena, , , GENERATE, Password@123, Password@123, FAIL, YES, Last name kha...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_EMAIL_002_SpecialCharsOnly, Test, , User, _-+@gmail.com, Password@123, Password@123, FAIL, YES, E...)">verifyRegistration(TC_EMAIL_002_SpecialCharsOnly, Test, , User, _-+@gmail.com, Password@123, Password@123, FAIL, YES, E...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_NAME_004_LongName_1407chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)">verifyRegistration(TC_NAME_004_LongName_1407chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_PASS_004_NumericPassword, heena, , mansuri, GENERATE, 111111111111111111111, 11111111111111111111...)">verifyRegistration(TC_PASS_004_NumericPassword, heena, , mansuri, GENERATE, 111111111111111111111, 11111111111111111111...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_PASS_003_ShortPassword_3char, Test, , User, GENERATE, A1@, A1@, FAIL, YES, 3 char password — sirf...)">verifyRegistration(TC_PASS_003_ShortPassword_3char, Test, , User, GENERATE, A1@, A1@, FAIL, YES, 3 char password — sirf...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_NAME_002_LastNameSpecialCharsOnly, heena, , .., GENERATE, Password@123, Password@123, FAIL, YES, ...)">verifyRegistration(TC_NAME_002_LastNameSpecialCharsOnly, heena, , .., GENERATE, Password@123, Password@123, FAIL, YES, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_PASS_002_ShortPassword_1char, Test, , User, GENERATE, a, a, FAIL, YES, Bahut chhota password — mi...)">verifyRegistration(TC_PASS_002_ShortPassword_1char, Test, , User, GENERATE, a, a, FAIL, YES, Bahut chhota password — mi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_UI_001_NoTermsCheckbox, heena, , mansuri, GENERATE, Password@123, Password@123, FAIL, NO, Terms c...)">verifyRegistration(TC_UI_001_NoTermsCheckbox, heena, , mansuri, GENERATE, Password@123, Password@123, FAIL, NO, Terms c...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_NAME_005_LongName_100chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)">verifyRegistration(TC_NAME_005_LongName_100chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_NAME_003_NameUnderscoresOnly, ________________, , mansuri, GENERATE, Password@123, Password@123, ...)">verifyRegistration(TC_NAME_003_NameUnderscoresOnly, ________________, , mansuri, GENERATE, Password@123, Password@123, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyNeuron_Test_Suite" title="testcase.register.REG_TC_ALL" class="method navigator-link" hash-for-method="verifyRegistration(TC_NAME_001_NumericNames, 1, 2, 3, GENERATE, Password@123, Password@123, FAIL, YES, Name fields me n...)">verifyRegistration(TC_NAME_001_NumericNames, 1, 2, 3, GENERATE, Password@123, Password@123, FAIL, YES, Name fields me n...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyNeuron_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MyNeuron_Test_Suite" class="panel MyNeuron_Test_Suite">
+          <div class="suite-MyNeuron_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcase.register.REG_TC_ALL</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_PASS_005_ValidPassword_8chars, heena, , mansuri, GENERATE, Heee@123, Heee@123, PASS, YES, Valid 8...)">
+                  </a> <!-- verifyRegistration(TC_PASS_005_ValidPassword_8chars, heena, , mansuri, GENERATE, Heee@123, Heee@123, PASS, YES, Valid 8...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_PASS_005_ValidPassword_8chars,heena,,mansuri,GENERATE,Heee@123,Heee@123,PASS,YES,Valid 8 char password — accept hona chahiye (BUG_032 fixed))</span>
+                  <div class="stack-trace">java.lang.AssertionError: [TC_PASS_005_ValidPassword_8chars] Registration honi chahiye thi lekin nahi hui
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_PASS_006_ValidPassword_AllTypes, heena, , mansuri, GENERATE, ....A1@a, ....A1@a, PASS, YES, Valid...)">
+                  </a> <!-- verifyRegistration(TC_PASS_006_ValidPassword_AllTypes, heena, , mansuri, GENERATE, ....A1@a, ....A1@a, PASS, YES, Valid...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_PASS_006_ValidPassword_AllTypes,heena,,mansuri,GENERATE,....A1@a,....A1@a,PASS,YES,Valid password (upper+lower+number+special) — accept hona chahiye (BUG_047 fixed))</span>
+                  <div class="stack-trace">java.lang.AssertionError: [TC_PASS_006_ValidPassword_AllTypes] Registration honi chahiye thi lekin nahi hui
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_EMAIL_004_ValidRegistration, heena, , mansuri, GENERATE, Password@123, Password@123, PASS, YES, C...)">
+                  </a> <!-- verifyRegistration(TC_EMAIL_004_ValidRegistration, heena, , mansuri, GENERATE, Password@123, Password@123, PASS, YES, C...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_EMAIL_004_ValidRegistration,heena,,mansuri,GENERATE,Password@123,Password@123,PASS,YES,Completely valid data — registration PASS hona chahiye (BUG_009))</span>
+                  <div class="stack-trace">java.lang.AssertionError: [TC_EMAIL_004_ValidRegistration] Registration honi chahiye thi lekin nahi hui
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_PASS_007_PasswordWithSpace, heena, , mansuri, GENERATE, Abc 123@, Abc 123@, PASS, YES, Password m...)">
+                  </a> <!-- verifyRegistration(TC_PASS_007_PasswordWithSpace, heena, , mansuri, GENERATE, Abc 123@, Abc 123@, PASS, YES, Password m...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_PASS_007_PasswordWithSpace,heena,,mansuri,GENERATE,Abc 123@,Abc 123@,PASS,YES,Password me space — allowed hai (passphrase standard, BUG_043 Not a bug))</span>
+                  <div class="stack-trace">java.lang.AssertionError: [TC_PASS_007_PasswordWithSpace] Registration honi chahiye thi lekin nahi hui
+	at testcase.register.REG_TC_ALL.verifyRegistration(REG_TC_ALL.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyNeuron_Test_Suite-class-failed -->
+          <div class="suite-MyNeuron_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.register.REG_TC_ALL</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_NAME_007_NumericName_DotPassword, 1, 2, 3, GENERATE, Pass.word@123, Pass.word@123, FAIL, YES, Num...)">
+                  </a> <!-- verifyRegistration(TC_NAME_007_NumericName_DotPassword, 1, 2, 3, GENERATE, Pass.word@123, Pass.word@123, FAIL, YES, Num...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_NAME_007_NumericName_DotPassword,1,2,3,GENERATE,Pass.word@123,Pass.word@123,FAIL,YES,Numeric names + dot password — validation error aana chahiye (BUG_011))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_EMAIL_005_DuplicateEmail, heena, , mansuri, testuser_duplicate@mailinator.com, Password@123, Pass...)">
+                  </a> <!-- verifyRegistration(TC_EMAIL_005_DuplicateEmail, heena, , mansuri, testuser_duplicate@mailinator.com, Password@123, Pass...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_EMAIL_005_DuplicateEmail,heena,,mansuri,testuser_duplicate@mailinator.com,Password@123,Password@123,FAIL,YES,Already registered email — clear error message aana chahiye (BUG_063))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_PASS_001_PasswordMismatch, Test, , User, GENERATE, Test@123, Test@456, FAIL, YES, Password aur Co...)">
+                  </a> <!-- verifyRegistration(TC_PASS_001_PasswordMismatch, Test, , User, GENERATE, Test@123, Test@456, FAIL, YES, Password aur Co...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_PASS_001_PasswordMismatch,Test,,User,GENERATE,Test@123,Test@456,FAIL,YES,Password aur Confirm Password alag hain — error aana chahiye)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_EMAIL_001_InvalidFormat, Test, , User, #@12, Password@123, Password@123, FAIL, YES, Invalid email...)">
+                  </a> <!-- verifyRegistration(TC_EMAIL_001_InvalidFormat, Test, , User, #@12, Password@123, Password@123, FAIL, YES, Invalid email...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_EMAIL_001_InvalidFormat,Test,,User,#@12,Password@123,Password@123,FAIL,YES,Invalid email #@12 — reject hona chahiye (BUG_008))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_EMAIL_003_EmailWithSpace, heena, , mansuri, 1@gmail.com , Password@123, Password@123, FAIL, YES, ...)">
+                  </a> <!-- verifyRegistration(TC_EMAIL_003_EmailWithSpace, heena, , mansuri, 1@gmail.com , Password@123, Password@123, FAIL, YES, ...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_EMAIL_003_EmailWithSpace,heena,,mansuri,1@gmail.com ,Password@123,Password@123,FAIL,YES,Email me trailing space — reject hona chahiye (BUG_046))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_NAME_006_LastNameEmpty, heena, , , GENERATE, Password@123, Password@123, FAIL, YES, Last name kha...)">
+                  </a> <!-- verifyRegistration(TC_NAME_006_LastNameEmpty, heena, , , GENERATE, Password@123, Password@123, FAIL, YES, Last name kha...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_NAME_006_LastNameEmpty,heena,,,GENERATE,Password@123,Password@123,FAIL,YES,Last name khali — mandatory field error aana chahiye (BUG_044 fixed))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_EMAIL_002_SpecialCharsOnly, Test, , User, _-+@gmail.com, Password@123, Password@123, FAIL, YES, E...)">
+                  </a> <!-- verifyRegistration(TC_EMAIL_002_SpecialCharsOnly, Test, , User, _-+@gmail.com, Password@123, Password@123, FAIL, YES, E...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_EMAIL_002_SpecialCharsOnly,Test,,User,_-+@gmail.com,Password@123,Password@123,FAIL,YES,Email username sirf special chars — reject hona chahiye (BUG_048 fixed))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_NAME_004_LongName_1407chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)">
+                  </a> <!-- verifyRegistration(TC_NAME_004_LongName_1407chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_NAME_004_LongName_1407chars,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,User,GENERATE,Password@123,Password@123,FAIL,YES,1407 char name — restrict ya error hona chahiye (BUG_013))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_PASS_004_NumericPassword, heena, , mansuri, GENERATE, 111111111111111111111, 11111111111111111111...)">
+                  </a> <!-- verifyRegistration(TC_PASS_004_NumericPassword, heena, , mansuri, GENERATE, 111111111111111111111, 11111111111111111111...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_PASS_004_NumericPassword,heena,,mansuri,GENERATE,111111111111111111111,111111111111111111111,FAIL,YES,Sirf numbers wala weak password — reject hona chahiye)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_PASS_003_ShortPassword_3char, Test, , User, GENERATE, A1@, A1@, FAIL, YES, 3 char password — sirf...)">
+                  </a> <!-- verifyRegistration(TC_PASS_003_ShortPassword_3char, Test, , User, GENERATE, A1@, A1@, FAIL, YES, 3 char password — sirf...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_PASS_003_ShortPassword_3char,Test,,User,GENERATE,A1@,A1@,FAIL,YES,3 char password — sirf relevant error message aana chahiye)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_NAME_002_LastNameSpecialCharsOnly, heena, , .., GENERATE, Password@123, Password@123, FAIL, YES, ...)">
+                  </a> <!-- verifyRegistration(TC_NAME_002_LastNameSpecialCharsOnly, heena, , .., GENERATE, Password@123, Password@123, FAIL, YES, ...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_NAME_002_LastNameSpecialCharsOnly,heena,,..,GENERATE,Password@123,Password@123,FAIL,YES,Last name sirf dots — reject hona chahiye (BUG_041 fixed))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_PASS_002_ShortPassword_1char, Test, , User, GENERATE, a, a, FAIL, YES, Bahut chhota password — mi...)">
+                  </a> <!-- verifyRegistration(TC_PASS_002_ShortPassword_1char, Test, , User, GENERATE, a, a, FAIL, YES, Bahut chhota password — mi...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_PASS_002_ShortPassword_1char,Test,,User,GENERATE,a,a,FAIL,YES,Bahut chhota password — min 8 chars ka error aana chahiye)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_UI_001_NoTermsCheckbox, heena, , mansuri, GENERATE, Password@123, Password@123, FAIL, NO, Terms c...)">
+                  </a> <!-- verifyRegistration(TC_UI_001_NoTermsCheckbox, heena, , mansuri, GENERATE, Password@123, Password@123, FAIL, NO, Terms c...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_UI_001_NoTermsCheckbox,heena,,mansuri,GENERATE,Password@123,Password@123,FAIL,NO,Terms checkbox nahi click kiya — submit nahi hona chahiye (BUG_045))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_NAME_005_LongName_100chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)">
+                  </a> <!-- verifyRegistration(TC_NAME_005_LongName_100chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_NAME_005_LongName_100chars,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,User,GENERATE,Password@123,Password@123,FAIL,YES,100 char name — restrict hona chahiye (BUG_020))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_NAME_003_NameUnderscoresOnly, ________________, , mansuri, GENERATE, Password@123, Password@123, ...)">
+                  </a> <!-- verifyRegistration(TC_NAME_003_NameUnderscoresOnly, ________________, , mansuri, GENERATE, Password@123, Password@123, ...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_NAME_003_NameUnderscoresOnly,________________,,mansuri,GENERATE,Password@123,Password@123,FAIL,YES,First name sirf underscores — reject hona chahiye (BUG_049 fixed))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistration(TC_NAME_001_NumericNames, 1, 2, 3, GENERATE, Password@123, Password@123, FAIL, YES, Name fields me n...)">
+                  </a> <!-- verifyRegistration(TC_NAME_001_NumericNames, 1, 2, 3, GENERATE, Password@123, Password@123, FAIL, YES, Name fields me n...) -->
+                  <span class="method-name">verifyRegistration</span>
+                  <span class="parameters">(TC_NAME_001_NumericNames,1,2,3,GENERATE,Password@123,Password@123,FAIL,YES,Name fields me numbers — reject hona chahiye (BUG_010/040 fixed))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyNeuron_Test_Suite-class-passed -->
+          <div class="suite-MyNeuron_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.login.LOGIN_TC_ALL</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(LOGIN_TC_036_ForgotPasswordLink, , , PASS, Forgot Password link — Reset page khulna chahiye, 404 nah...)">
+                  </a> <!-- verifyLogin(LOGIN_TC_036_ForgotPasswordLink, , , PASS, Forgot Password link — Reset page khulna chahiye, 404 nah...) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(LOGIN_TC_036_ForgotPasswordLink,,,PASS,Forgot Password link — Reset page khulna chahiye, 404 nahi (BUG_035 fixed))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(LOGIN_TC_026_AfterEmailVerification, testuser@example.com, Password@123, PASS, Verified account se l...)">
+                  </a> <!-- verifyLogin(LOGIN_TC_026_AfterEmailVerification, testuser@example.com, Password@123, PASS, Verified account se l...) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(LOGIN_TC_026_AfterEmailVerification,testuser@example.com,Password@123,PASS,Verified account se login — 'verify email' error nahi aana chahiye (BUG_026))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(LOGIN_TC_017_ValidCredentials, testuser@example.com, Password@123, PASS, Sahi email + password — log...)">
+                  </a> <!-- verifyLogin(LOGIN_TC_017_ValidCredentials, testuser@example.com, Password@123, PASS, Sahi email + password — log...) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(LOGIN_TC_017_ValidCredentials,testuser@example.com,Password@123,PASS,Sahi email + password — login hona chahiye (BUG_017 pending))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(LOGIN_TC_034_TermsAndPrivacyLinks, , , PASS, Terms &amp; Conditions + Privacy Policy links — sahi page k...)">
+                  </a> <!-- verifyLogin(LOGIN_TC_034_TermsAndPrivacyLinks, , , PASS, Terms & Conditions + Privacy Policy links — sahi page k...) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(LOGIN_TC_034_TermsAndPrivacyLinks,,,PASS,Terms & Conditions + Privacy Policy links — sahi page khulna chahiye (Already passing))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(LOGIN_TC_038_ForgotPassword_UnregisteredEmail, test123@abc.com, , PASS, Unregistered email — generic...)">
+                  </a> <!-- verifyLogin(LOGIN_TC_038_ForgotPassword_UnregisteredEmail, test123@abc.com, , PASS, Unregistered email — generic...) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(LOGIN_TC_038_ForgotPassword_UnregisteredEmail,test123@abc.com,,PASS,Unregistered email — generic message aana chahiye, registration status reveal nahi (BUG_037 fixed))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyNeuron_Test_Suite-class-passed -->
+        </div> <!-- panel MyNeuron_Test_Suite -->
+        <div panel-name="test-xml-MyNeuron_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\leado\git\myNeuroneAutomationTesting\MyNeuroneAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MyNeuron Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;utils.ReportGenerator&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Registration Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.register.REG_TC_ALL&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Registration Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.login.LOGIN_TC_ALL&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Tests --&gt;
+&lt;/suite&gt; &lt;!-- MyNeuron Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MyNeuron_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MyNeuron Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Registration Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MyNeuron_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MyNeuron Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MyNeuron_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MyNeuron Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MyNeuron_Test_Suite');
+function tableData_MyNeuron_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyRegistration')
+data.setCell(0, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(0, 3, 9237);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLogin')
+data.setCell(1, 2, 'testcase.login.LOGIN_TC_ALL')
+data.setCell(1, 3, 8027);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyRegistration')
+data.setCell(2, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(2, 3, 7632);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyRegistration')
+data.setCell(3, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(3, 3, 7318);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyRegistration')
+data.setCell(4, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(4, 3, 7307);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyRegistration')
+data.setCell(5, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(5, 3, 7181);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyRegistration')
+data.setCell(6, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(6, 3, 7142);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyRegistration')
+data.setCell(7, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(7, 3, 7064);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyRegistration')
+data.setCell(8, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(8, 3, 6756);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLogin')
+data.setCell(9, 2, 'testcase.login.LOGIN_TC_ALL')
+data.setCell(9, 3, 6603);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyRegistration')
+data.setCell(10, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(10, 3, 6543);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyRegistration')
+data.setCell(11, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(11, 3, 6447);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyRegistration')
+data.setCell(12, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(12, 3, 6269);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyRegistration')
+data.setCell(13, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(13, 3, 6243);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyRegistration')
+data.setCell(14, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(14, 3, 6209);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyRegistration')
+data.setCell(15, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(15, 3, 6185);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyRegistration')
+data.setCell(16, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(16, 3, 6176);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyRegistration')
+data.setCell(17, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(17, 3, 6163);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyRegistration')
+data.setCell(18, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(18, 3, 6140);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyRegistration')
+data.setCell(19, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(19, 3, 6135);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyRegistration')
+data.setCell(20, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(20, 3, 6126);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyRegistration')
+data.setCell(21, 2, 'testcase.register.REG_TC_ALL')
+data.setCell(21, 3, 5945);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyLogin')
+data.setCell(22, 2, 'testcase.login.LOGIN_TC_ALL')
+data.setCell(22, 3, 5834);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyLogin')
+data.setCell(23, 2, 'testcase.login.LOGIN_TC_ALL')
+data.setCell(23, 3, 5708);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyLogin')
+data.setCell(24, 2, 'testcase.login.LOGIN_TC_ALL')
+data.setCell(24, 3, 5287);
+window.suiteTableData['MyNeuron_Test_Suite']= { tableData: data, tableDiv: 'times-div-MyNeuron_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-MyNeuron_Test_Suite">
+              </div> <!-- times-div-MyNeuron_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MyNeuron_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MyNeuron Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MyNeuron_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MyNeuron_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.register.REG_TC_ALL</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_PASS_001_PasswordMismatch, Test, , User, GENERATE, Test@123, Test@456, FAIL, YES, Password aur Co...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_PASS_002_ShortPassword_1char, Test, , User, GENERATE, a, a, FAIL, YES, Bahut chhota password — mi...)</span>
+                <span class="method-start">7323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_PASS_003_ShortPassword_3char, Test, , User, GENERATE, A1@, A1@, FAIL, YES, 3 char password — sirf...)</span>
+                <span class="method-start">13569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_PASS_004_NumericPassword, heena, , mansuri, GENERATE, 111111111111111111111, 11111111111111111111...)</span>
+                <span class="method-start">19735 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegistration(TC_PASS_005_ValidPassword_8chars, heena, , mansuri, GENERATE, Heee@123, Heee@123, PASS, YES, Valid 8...)</span>
+                <span class="method-start">26493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegistration(TC_PASS_006_ValidPassword_AllTypes, heena, , mansuri, GENERATE, ....A1@a, ....A1@a, PASS, YES, Valid...)</span>
+                <span class="method-start">33681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegistration(TC_PASS_007_PasswordWithSpace, heena, , mansuri, GENERATE, Abc 123@, Abc 123@, PASS, YES, Password m...)</span>
+                <span class="method-start">41003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_EMAIL_001_InvalidFormat, Test, , User, #@12, Password@123, Password@123, FAIL, YES, Invalid email...)</span>
+                <span class="method-start">48070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_EMAIL_002_SpecialCharsOnly, Test, , User, _-+@gmail.com, Password@123, Password@123, FAIL, YES, E...)</span>
+                <span class="method-start">55704 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_EMAIL_003_EmailWithSpace, heena, , mansuri, 1@gmail.com , Password@123, Password@123, FAIL, YES, ...)</span>
+                <span class="method-start">61846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegistration(TC_EMAIL_004_ValidRegistration, heena, , mansuri, GENERATE, Password@123, Password@123, PASS, YES, C...)</span>
+                <span class="method-start">67974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_EMAIL_005_DuplicateEmail, heena, , mansuri, testuser_duplicate@mailinator.com, Password@123, Pass...)</span>
+                <span class="method-start">75119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_NAME_001_NumericNames, 1, 2, 3, GENERATE, Password@123, Password@123, FAIL, YES, Name fields me n...)</span>
+                <span class="method-start">81306 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_NAME_002_LastNameSpecialCharsOnly, heena, , .., GENERATE, Password@123, Password@123, FAIL, YES, ...)</span>
+                <span class="method-start">87443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_NAME_003_NameUnderscoresOnly, ________________, , mansuri, GENERATE, Password@123, Password@123, ...)</span>
+                <span class="method-start">93714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_NAME_004_LongName_1407chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)</span>
+                <span class="method-start">99925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_NAME_005_LongName_100chars, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)</span>
+                <span class="method-start">109164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_NAME_006_LastNameEmpty, heena, , , GENERATE, Password@123, Password@123, FAIL, YES, Last name kha...)</span>
+                <span class="method-start">115613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_NAME_007_NumericName_DotPassword, 1, 2, 3, GENERATE, Pass.word@123, Pass.word@123, FAIL, YES, Num...)</span>
+                <span class="method-start">122158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistration(TC_UI_001_NoTermsCheckbox, heena, , mansuri, GENERATE, Password@123, Password@123, FAIL, NO, Terms c...)</span>
+                <span class="method-start">128336 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.login.LOGIN_TC_ALL</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin(LOGIN_TC_017_ValidCredentials, testuser@example.com, Password@123, PASS, Sahi email + password — log...)</span>
+                <span class="method-start">134756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin(LOGIN_TC_026_AfterEmailVerification, testuser@example.com, Password@123, PASS, Verified account se l...)</span>
+                <span class="method-start">140592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin(LOGIN_TC_036_ForgotPasswordLink, , , PASS, Forgot Password link — Reset page khulna chahiye, 404 nah...)</span>
+                <span class="method-start">146301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin(LOGIN_TC_038_ForgotPassword_UnregisteredEmail, test123@abc.com, , PASS, Unregistered email — generic...)</span>
+                <span class="method-start">151589 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin(LOGIN_TC_034_TermsAndPrivacyLinks, , , PASS, Terms & Conditions + Privacy Policy links — sahi page k...)</span>
+                <span class="method-start">158193 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
