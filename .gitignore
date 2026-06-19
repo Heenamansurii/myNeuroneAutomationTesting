@@ -1,1 +1,15 @@
-/target/
+# IDE files
+.classpath
+.project
+.settings/
+*.class
+
+# Maven
+target/
+
+# Reports aur screenshots — optional, agar track nahi karna
+reports/
+screenshots/
+
+# Selenium driver cache
+.wdm/

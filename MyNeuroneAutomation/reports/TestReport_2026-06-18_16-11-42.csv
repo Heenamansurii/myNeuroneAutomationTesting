@@ -1,29 +1,29 @@
 TC ID,Description,Status,Time,Error
-"TC_PASS_001_PasswordMismatch","GENERATE","PASS","16:11:49",""
-"TC_PASS_002_ShortPassword_1char","GENERATE","PASS","16:11:55",""
-"TC_PASS_003_ShortPassword_3char","GENERATE","PASS","16:12:02",""
-"TC_PASS_004_NumericPassword","GENERATE","PASS","16:12:08",""
-"TC_PASS_005_ValidPassword_8chars","GENERATE","FAIL","16:12:16","[TC_PASS_005_ValidPassword_8chars] Registration honi chahiye thi lekin nahi hui"
-"TC_PASS_006_ValidPassword_AllTypes","GENERATE","FAIL","16:12:23","[TC_PASS_006_ValidPassword_AllTypes] Registration honi chahiye thi lekin nahi hui"
-"TC_PASS_007_PasswordWithSpace","GENERATE","FAIL","16:12:30","[TC_PASS_007_PasswordWithSpace] Registration honi chahiye thi lekin nahi hui"
-"TC_EMAIL_001_InvalidFormat","#@12","PASS","16:12:38",""
-"TC_EMAIL_002_SpecialCharsOnly","_-+@gmail.com","PASS","16:12:44",""
-"TC_EMAIL_003_EmailWithSpace","1@gmail.com ","PASS","16:12:50",""
-"TC_EMAIL_004_ValidRegistration","GENERATE","FAIL","16:12:57","[TC_EMAIL_004_ValidRegistration] Registration honi chahiye thi lekin nahi hui"
-"TC_EMAIL_005_DuplicateEmail","testuser_duplicate@mailinator.com","PASS","16:13:03",""
-"TC_NAME_001_NumericNames","GENERATE","PASS","16:13:09",""
-"TC_NAME_002_LastNameSpecialCharsOnly","GENERATE","PASS","16:13:16",""
-"TC_NAME_003_NameUnderscoresOnly","GENERATE","PASS","16:13:22",""
-"TC_NAME_004_LongName_1407chars","GENERATE","PASS","16:13:31",""
-"TC_NAME_005_LongName_100chars","GENERATE","PASS","16:13:38",""
-"TC_NAME_006_LastNameEmpty","GENERATE","PASS","16:13:44",""
-"TC_NAME_007_NumericName_DotPassword","GENERATE","PASS","16:13:50",""
-"TC_UI_001_NoTermsCheckbox","GENERATE","PASS","16:13:56",""
-
+TC_PASS_001_PasswordMismatch,GENERATE,PASS,16:11:49,
+TC_PASS_002_ShortPassword_1char,GENERATE,PASS,16:11:55,
+TC_PASS_003_ShortPassword_3char,GENERATE,PASS,16:12:02,
+TC_PASS_004_NumericPassword,GENERATE,PASS,16:12:08,
+TC_PASS_005_ValidPassword_8chars,GENERATE,FAIL,16:12:16,[TC_PASS_005_ValidPassword_8chars] Registration honi chahiye thi lekin nahi hui
+TC_PASS_006_ValidPassword_AllTypes,GENERATE,FAIL,16:12:23,[TC_PASS_006_ValidPassword_AllTypes] Registration honi chahiye thi lekin nahi hui
+TC_PASS_007_PasswordWithSpace,GENERATE,FAIL,16:12:30,[TC_PASS_007_PasswordWithSpace] Registration honi chahiye thi lekin nahi hui
+TC_EMAIL_001_InvalidFormat,#@12,PASS,16:12:38,
+TC_EMAIL_002_SpecialCharsOnly,_-+@gmail.com,PASS,16:12:44,
+TC_EMAIL_003_EmailWithSpace,1@gmail.com ,PASS,16:12:50,
+TC_EMAIL_004_ValidRegistration,GENERATE,FAIL,16:12:57,[TC_EMAIL_004_ValidRegistration] Registration honi chahiye thi lekin nahi hui
+TC_EMAIL_005_DuplicateEmail,testuser_duplicate@mailinator.com,PASS,16:13:03,
+TC_NAME_001_NumericNames,GENERATE,PASS,16:13:09,
+TC_NAME_002_LastNameSpecialCharsOnly,GENERATE,PASS,16:13:16,
+TC_NAME_003_NameUnderscoresOnly,GENERATE,PASS,16:13:22,
+TC_NAME_004_LongName_1407chars,GENERATE,PASS,16:13:31,
+TC_NAME_005_LongName_100chars,GENERATE,PASS,16:13:38,
+TC_NAME_006_LastNameEmpty,GENERATE,PASS,16:13:44,
+TC_NAME_007_NumericName_DotPassword,GENERATE,PASS,16:13:50,
+TC_UI_001_NoTermsCheckbox,GENERATE,PASS,16:13:56,
+,,,,
 SUMMARY,,,,
 Total,20,,, 
 Pass,16,,,
 Fail,4,,,
-Run Date,2026-06-18 16:11:42,,,
+Run Date,18-06-2026 16:11,,,
 Environment,Staging,,,
 URL,https://staging.myneuronworld.com,,,
